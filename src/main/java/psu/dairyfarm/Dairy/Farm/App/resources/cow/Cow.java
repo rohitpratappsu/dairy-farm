@@ -7,6 +7,7 @@ import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.util.Date;
+import java.util.List;
 
 @Data
 @AllArgsConstructor
@@ -20,4 +21,5 @@ public class Cow {
     private Date dateOfBirth;
     private Date nextVaccinationDate;
     private Status status;
+    private List<BreedingHistory> breedingHistory;
 }
